@@ -29,7 +29,7 @@ RUN chmod +x /prepare.sh
 RUN /prepare.sh
 
 # Stage 2: Final stage
-FROM srnjak-dev-playground-mail:$BASE_IMAGE_TAG
+FROM srnjak/srnjak-dev-playground-mail:$BASE_IMAGE_TAG
 
 # Install slapd in the final image
 RUN apt-get update && \
